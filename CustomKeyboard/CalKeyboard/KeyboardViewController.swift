@@ -9,7 +9,7 @@
 import UIKit
 
 public class characterUIButton: UIButton {
-    var mychar: String = "GG";
+    var mychar: String = "";
     public func setChar(char: String) {
         mychar = char
     }
@@ -28,7 +28,6 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var BButton: characterUIButton!
     @IBOutlet var CButton: characterUIButton!
     @IBOutlet var DButton: characterUIButton!
-    @IBOutlet var EButton: characterUIButton!
     @IBOutlet var FButton: characterUIButton!
     @IBOutlet var GButton: characterUIButton!
     @IBOutlet var HButton: characterUIButton!
@@ -46,11 +45,14 @@ class KeyboardViewController: UIInputViewController {
     @IBOutlet var TButton: characterUIButton!
     @IBOutlet var UButton: characterUIButton!
     @IBOutlet var VButton: characterUIButton!
-    @IBOutlet var WButton: characterUIButton!
+
     @IBOutlet var XButton: characterUIButton!
     @IBOutlet var YButton: characterUIButton!
     @IBOutlet var ZButton: characterUIButton!
     @IBOutlet var spaceButton: UIButton!
+    
+    @IBOutlet var EButton: characterUIButton!
+    @IBOutlet var WButton: characterUIButton!
     
     
     var noBeer: Bool = false
@@ -124,14 +126,14 @@ class KeyboardViewController: UIInputViewController {
         content += " "
     }
 
-    func aPressed(){
-        if noBeer {
-            noBeer = false
-            hideRealString()
-        }
-        (textDocumentProxy as UIKeyInput).insertText("🍺")
-        content += "a"
-    }
+//    func aPressed(){
+//        if noBeer {
+//            noBeer = false
+//            hideRealString()
+//        }
+//        (textDocumentProxy as UIKeyInput).insertText("🍺")
+//        content += "a"
+//    }
     
     func hideRealString() {
         for _ in content.characters {
@@ -187,7 +189,7 @@ class KeyboardViewController: UIInputViewController {
 
     
     func loadInterface() {
-//        initiateCharacterButtons()
+        initiateCharacterButtons()
 
         let keyboardNib = UINib(nibName: "Keyboard", bundle: nil)
         keyboardView = keyboardNib.instantiateWithOwner(self, options: nil)[0] as! UIView
@@ -204,35 +206,30 @@ class KeyboardViewController: UIInputViewController {
         
         AButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
         
-        
-        
-//        BButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
-//        CButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        DButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        EButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        FButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        GButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        HButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        IButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        JButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        KButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        LButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        MButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        NButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        OButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        PButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        QButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        RButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        SButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        TButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        UButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        VButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        WButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        XButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        YButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-//        ZButton.addTarget(self, action: "beerPressed", forControlEvents: .TouchUpInside)
-        
+        BButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        CButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        DButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        EButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        FButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        GButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        HButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        IButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        JButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        KButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        LButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        MButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        NButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        OButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        PButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        QButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        RButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        SButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        TButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        UButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        VButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        WButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        XButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        YButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
+        ZButton.addTarget(self, action: "keyPressed:", forControlEvents: .TouchUpInside)
     }
-
-
 }

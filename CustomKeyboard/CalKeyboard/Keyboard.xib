@@ -10,6 +10,7 @@
                 <outlet property="BButton" destination="oMY-He-5Yb" id="itV-uM-32W"/>
                 <outlet property="CButton" destination="RiF-TT-gfN" id="Bnz-Cl-idk"/>
                 <outlet property="DButton" destination="rNP-hP-UC1" id="vud-To-hwZ"/>
+                <outlet property="EButton" destination="9GW-FT-IbS" id="GRn-7h-u9l"/>
                 <outlet property="FButton" destination="ruD-jF-div" id="pEG-ey-x1P"/>
                 <outlet property="GButton" destination="YHl-bY-kik" id="iK9-E1-esu"/>
                 <outlet property="HButton" destination="chv-BQ-XWd" id="4pf-QB-0hX"/>
@@ -27,7 +28,7 @@
                 <outlet property="TButton" destination="OOq-b1-jeS" id="dJM-om-drv"/>
                 <outlet property="UButton" destination="JeW-ge-r6F" id="TPb-o6-lJv"/>
                 <outlet property="VButton" destination="aRG-av-vjv" id="Ue8-9c-ms0"/>
-                <outlet property="WButton" destination="9GW-FT-IbS" id="PXE-6k-ZJM"/>
+                <outlet property="WButton" destination="PQE-FF-iC7" id="rIR-2F-SWR"/>
                 <outlet property="XButton" destination="1x1-s4-yDd" id="8XX-XW-ZbZ"/>
                 <outlet property="YButton" destination="k2F-ym-6z2" id="hjm-jw-hZO"/>
                 <outlet property="ZButton" destination="e6E-nl-shd" id="P6w-BP-hAb"/>
@@ -162,11 +163,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="🍺"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-FF-iC7">
-                    <rect key="frame" x="45" y="25" width="30" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="🍺"/>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-b1-jeS">
                     <rect key="frame" x="150" y="25" width="30" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -200,6 +196,11 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-oI-5gy">
                     <rect key="frame" x="10" y="25" width="30" height="30"/>
                     <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="30"/>
+                    <state key="normal" title="🍺"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-FF-iC7">
+                    <rect key="frame" x="48" y="25" width="30" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="🍺"/>
                 </button>
             </subviews>
